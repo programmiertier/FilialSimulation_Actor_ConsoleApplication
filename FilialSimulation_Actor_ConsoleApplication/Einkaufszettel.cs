@@ -32,9 +32,6 @@ namespace FilialSimulation_Actor_ConsoleApplication
                 WriteLine("Artikel Nummer {0} ist {1} mal auf der Liste", platzhalter.artikel, platzhalter.anzahl);
             }
         }
-
-
-
         /* public void zettel(int von, int bis)
         {
             for (von = 1; von <= bis; von++)
@@ -42,17 +39,5 @@ namespace FilialSimulation_Actor_ConsoleApplication
                 WriteLine("Artikel {0} bitte {0} mal einkaufen", von);
             }
         } */
-
-        internal Actor Actor
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
     }
 }

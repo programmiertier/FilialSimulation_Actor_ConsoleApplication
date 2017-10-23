@@ -9,6 +9,15 @@ namespace FilialSimulation_Actor_ConsoleApplication
 {
     internal class Kunde : Actor
     {
+        public Kunde()
+        {
+            this.id = Actor.lfrNr;
+            WriteLine("Ich bin ein Kunde und werde als {0}. aufgerufen", id);
+        }
 
+        ~Kunde()
+        {
+            WriteLine("Kunde wurde destruktiert");
+        }
     }
 }

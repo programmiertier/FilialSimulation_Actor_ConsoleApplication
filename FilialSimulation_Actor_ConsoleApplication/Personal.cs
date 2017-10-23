@@ -9,6 +9,14 @@ namespace FilialSimulation_Actor_ConsoleApplication
 {
     internal class Personal : Actor
     {
-
+        public Personal()
+        {
+            this.id = Actor.lfrNr;
+            WriteLine("Ich bin Personal und werde als {0}. aufgerufen", id);
+        }
+        ~Personal()
+        {
+            WriteLine("Personal wurde destruktiert");
+        }
     }
 }

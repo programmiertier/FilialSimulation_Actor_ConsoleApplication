@@ -9,16 +9,28 @@ namespace FilialSimulation_Actor_ConsoleApplication
 {
     internal class Actor
     {
-        protected int _id;
+        protected int id;
         private static int instances = 0;
-        protected string _rolle = "Actor";
+        private string _rolle = "Actor";
         private Einkaufszettel _einkaufsliste;
-        
+        static public int lfrNr;
+
 
         // public Einkaufszettel Liste { get { _einkaufsliste; } set { _einkaufsliste = value; } }
+        public Einkaufszettel einkaufsliste
+        {
+            get
+            {
+                return _einkaufsliste;
+            }
 
+            set
+            {
 
-        public Actor()
+            }
+        }
+
+        /* public Actor()
         {
             _einkaufsliste = new Einkaufszettel();
             instances++;
@@ -35,25 +47,25 @@ namespace FilialSimulation_Actor_ConsoleApplication
             {
                 _rolle = "Dieb";
             }
+        } */
+
+        public Actor()
+        {
+            lfrNr++;
+            _einkaufsliste = new Einkaufszettel();
+            WriteLine("Zuerst geht es durch den leeren Konstruktor vom Actor");
+        }
+
+        ~Actor()
+        {
+            WriteLine("Actor wurde destruktiert");
         }
 
         public void listeAnzeigen()
         {
-            WriteLine("Person {0} hat die Rolle {1}", _id, _rolle);
-            _einkaufsliste.zeigen();
+            // WriteLine("Person {0} hat die Rolle {1}", _id, _rolle);
+            einkaufsliste.zeigen();
             ReadLine();
-        }
-
-        public int einkaufsliste
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
         }
     }
 }

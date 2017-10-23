@@ -12,17 +12,23 @@ namespace FilialSimulation_Actor_ConsoleApplication
         static void Main(string[] args)
         {
 
-            Personal huber = new Personal();
+            /*Personal huber = new Personal();
             huber.listeAnzeigen();
 
             Dieb meier = new Dieb();
             meier.listeAnzeigen();
 
             Kunde becker = new Kunde();
-            becker.listeAnzeigen();
+            becker.listeAnzeigen();*/
 
-        /* meinkleinereinkauf.zettel(1, 5);*/
-
+            /* meinkleinereinkauf.zettel(1, 5);*/
+            Kunde[] reisebus = new Kunde[30];
+            for (int laenge = 0; laenge < reisebus.Length; laenge++)
+            {
+                reisebus[laenge] = new Kunde();
+                reisebus[laenge].listeAnzeigen();
+            }
+            ReadLine();
+        }
     }
-}
 }
