@@ -1,0 +1,2 @@
+# FilialSimulation_Actor_ConsoleApplication
+Actor der FilialSimulation
