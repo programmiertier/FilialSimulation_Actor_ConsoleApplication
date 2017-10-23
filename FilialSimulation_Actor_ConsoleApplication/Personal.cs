@@ -7,7 +7,7 @@ using static System.Console;
 
 namespace FilialSimulation_Actor_ConsoleApplication
 {
-    class Personal : Actor
+    internal class Personal : Actor
     {
 
     }

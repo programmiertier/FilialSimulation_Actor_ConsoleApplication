@@ -7,13 +7,11 @@ using static System.Console;
 
 namespace FilialSimulation_Actor_ConsoleApplication
 {
-    internal class Actor
+    internal class Einkaufszettel
     {
-        private int _einkaufsliste;
-        private int id;
-        private int rolle;
+        private int liste;
 
-        public int einkaufslsite
+        internal Actor Actor
         {
             get
             {

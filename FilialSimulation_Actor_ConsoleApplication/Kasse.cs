@@ -7,7 +7,7 @@ using static System.Console;
 
 namespace FilialSimulation_Actor_ConsoleApplication
 {
-    internal class Kunde : Actor
+    internal class Kasse
     {
 
     }

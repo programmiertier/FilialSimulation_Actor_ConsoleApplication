@@ -3,23 +3,47 @@
   <Class Name="FilialSimulation_Actor_ConsoleApplication.Actor">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Actor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FilialSimulation_Actor_ConsoleApplication.Kunde">
-    <Position X="2.25" Y="3" Width="1.5" />
+    <Position X="6.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Kunde.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FilialSimulation_Actor_ConsoleApplication.Personal">
-    <Position X="8" Y="3" Width="1.5" />
+    <Position X="3.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Personal.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="FilialSimulation_Actor_ConsoleApplication.Dieb" Collapsed="true">
+    <Position X="9.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dieb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FilialSimulation_Actor_ConsoleApplication.Kasse">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kasse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FilialSimulation_Actor_ConsoleApplication.Einkaufszettel">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Einkaufszettel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Actor" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
