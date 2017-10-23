@@ -9,22 +9,30 @@ namespace FilialSimulation_Actor_ConsoleApplication
 {
     internal class Einkaufszettel
     {
-        struct zeile
+        public struct zeile
         {
             public int artikel;
             public int anzahl;
         }
 
-        static private List<zeile> _liste;
+        public List<zeile> liste = new List<zeile>();
 
         public Einkaufszettel()
         {
             for (int von = 1; von <= 3; von++)
             {
-                _liste.Add(new Einkaufszettel.zeile() { artikel = von, anzahl = von});
-                WriteLine("Artikel {0} bitte {0} kaufen", von);
+                liste.Add(new Einkaufszettel.zeile() { artikel = von, anzahl = von });
             }
         }
+
+        public void zeigen()
+        {
+            foreach (zeile platzhalter in liste)
+            {
+                WriteLine("Artikel Nummer {0} ist {1} mal auf der Liste", platzhalter.artikel, platzhalter.anzahl);
+            }
+        }
+
 
 
         /* public void zettel(int von, int bis)

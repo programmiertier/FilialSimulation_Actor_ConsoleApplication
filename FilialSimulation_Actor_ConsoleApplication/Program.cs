@@ -11,9 +11,18 @@ namespace FilialSimulation_Actor_ConsoleApplication
     {
         static void Main(string[] args)
         {
-            Einkaufszettel meinkleinereinkauf = new Einkaufszettel();
-            /* meinkleinereinkauf.zettel(1, 5);*/
-            
-        }
+
+            Personal huber = new Personal();
+            huber.listeAnzeigen();
+
+            Dieb meier = new Dieb();
+            meier.listeAnzeigen();
+
+            Kunde becker = new Kunde();
+            becker.listeAnzeigen();
+
+        /* meinkleinereinkauf.zettel(1, 5);*/
+
     }
+}
 }
