@@ -13,7 +13,7 @@ namespace FilialSimulation_Actor_ConsoleApplication
         private int id;
         private int rolle;
 
-        public int einkaufslsite
+        public int einkaufsliste
         {
             get
             {

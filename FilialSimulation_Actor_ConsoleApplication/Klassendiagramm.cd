@@ -3,7 +3,7 @@
   <Class Name="FilialSimulation_Actor_ConsoleApplication.Actor">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAAAQAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Actor.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -37,8 +37,15 @@
   </Class>
   <Class Name="FilialSimulation_Actor_ConsoleApplication.Einkaufszettel">
     <Position X="9.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="FilialSimulation_Actor_ConsoleApplication.Einkaufszettel.zeile" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Einkaufszettel.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>Einkaufszettel.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

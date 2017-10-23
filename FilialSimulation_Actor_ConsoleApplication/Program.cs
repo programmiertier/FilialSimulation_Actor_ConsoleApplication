@@ -11,7 +11,9 @@ namespace FilialSimulation_Actor_ConsoleApplication
     {
         static void Main(string[] args)
         {
-
+            Einkaufszettel meinkleinereinkauf = new Einkaufszettel();
+            /* meinkleinereinkauf.zettel(1, 5);*/
+            
         }
     }
 }
