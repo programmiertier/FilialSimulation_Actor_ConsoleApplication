@@ -16,7 +16,13 @@ namespace FilialSimulation_Actor_ConsoleApplication
         }
         ~Personal()
         {
-            WriteLine("Personal wurde destruktiert");
+            
+        }
+
+        public override void bezahlen()
+        {
+            WriteLine("Das Personal zahlt mit Rabatt");
+            this.listeAnzeigen();
         }
     }
 }

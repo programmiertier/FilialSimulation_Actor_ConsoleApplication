@@ -19,10 +19,10 @@ namespace FilialSimulation_Actor_ConsoleApplication
 
         public Einkaufszettel()
         {
-            for (int von = 1; von <= 3; von++)
-            {
-                liste.Add(new Einkaufszettel.zeile() { artikel = von, anzahl = von });
-            }
+            Random zufall = new Random(Actor.lfrNr);
+            int bis = zufall.Next(1, 10);
+            for (int von = 1; von <= bis; von++)
+            { liste.Add(new zeile() { artikel = zufall.Next(1, 800), anzahl = zufall.Next(4, 10) }); }
         }
 
         public void zeigen()
@@ -32,12 +32,5 @@ namespace FilialSimulation_Actor_ConsoleApplication
                 WriteLine("Artikel Nummer {0} ist {1} mal auf der Liste", platzhalter.artikel, platzhalter.anzahl);
             }
         }
-        /* public void zettel(int von, int bis)
-        {
-            for (von = 1; von <= bis; von++)
-            {
-                WriteLine("Artikel {0} bitte {0} mal einkaufen", von);
-            }
-        } */
     }
 }

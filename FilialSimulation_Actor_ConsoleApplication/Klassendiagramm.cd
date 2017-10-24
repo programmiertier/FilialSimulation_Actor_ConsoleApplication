@@ -2,29 +2,36 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="FilialSimulation_Actor_ConsoleApplication.Actor">
     <Position X="5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="FilialSimulation_Actor_ConsoleApplication.Actor.zeile" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Actor.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAQAAAAAAAAQBAAABAAAAAAABAAAAgAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQAAAAAAAAQBAAAAAAAAAABBAAAAgAAACAAAAAoA=</HashCode>
       <FileName>Actor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FilialSimulation_Actor_ConsoleApplication.Kunde">
     <Position X="6.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Kunde.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FilialSimulation_Actor_ConsoleApplication.Personal">
     <Position X="3.25" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Personal.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FilialSimulation_Actor_ConsoleApplication.Dieb" Collapsed="true">
     <Position X="9.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Dieb.cs</FileName>
     </TypeIdentifier>
   </Class>

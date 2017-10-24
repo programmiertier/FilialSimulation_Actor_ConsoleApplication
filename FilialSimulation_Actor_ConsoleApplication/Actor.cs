@@ -58,7 +58,7 @@ namespace FilialSimulation_Actor_ConsoleApplication
 
         ~Actor()
         {
-            WriteLine("Actor wurde destruktiert");
+            
         }
 
         public void listeAnzeigen()
@@ -66,6 +66,41 @@ namespace FilialSimulation_Actor_ConsoleApplication
             // WriteLine("Person {0} hat die Rolle {1}", _id, _rolle);
             einkaufsliste.zeigen();
             ReadLine();
+        }
+
+        public virtual void bezahlen()
+        {
+            WriteLine("Der Actor zahlt für");
+            this.listeAnzeigen();
+        }
+        public struct zeile
+        {
+            int art;
+            int anz;
+        }
+
+
+        public void wareEntnehmen()
+        {
+            // temporärer Einkaufswagen
+            // typvorlage kann der Einkaufzettel sein
+            for(int i = 0; i <_einkaufsliste.liste.Count; i++)
+            {
+                WriteLine("vom zettel : {0}", einkaufsliste.liste[i].artikel);
+            }
+            einkaufsliste.liste.Add(_einkaufsliste.liste[]);
+            // vermindern des Bestands im Regal
+            // welches Regal? erst wenn integriert in Projekt
+
+            // um den Einkaufswunsch
+
+            // also vom Einkaufszettel ablesen
+
+            // solange noch was da ist
+
+            // sonst nur die verfügbare Menge nehmen
+
+            // damit bildet sich der 'Einkaufswagen'
         }
     }
 }

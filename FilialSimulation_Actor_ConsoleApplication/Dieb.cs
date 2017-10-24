@@ -16,7 +16,13 @@ namespace FilialSimulation_Actor_ConsoleApplication
         }
         ~Dieb()
         {
-            WriteLine("Dieb wurde destruktiert");
+            
+        }
+
+        public override void bezahlen()
+        {
+            WriteLine("Der hier, weil Dieb, zahlt fei gar nix");
+            this.listeAnzeigen();
         }
 
     }

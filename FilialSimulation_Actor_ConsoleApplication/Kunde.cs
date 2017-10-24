@@ -17,7 +17,13 @@ namespace FilialSimulation_Actor_ConsoleApplication
 
         ~Kunde()
         {
-            WriteLine("Kunde wurde destruktiert");
+            
+        }
+
+        public override void bezahlen()
+        {
+            WriteLine("Der Kunde zahlt");
+            this.listeAnzeigen();
         }
     }
 }
