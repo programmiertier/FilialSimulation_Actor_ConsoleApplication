@@ -14,7 +14,26 @@ namespace FilialSimulation_Actor_ConsoleApplication
         private string _rolle = "Actor";
         private Einkaufszettel _einkaufsliste;
         static public int lfrNr;
+        protected Einkaufszettel _einkaufswagen;
 
+        public struct zeile
+        {
+            int art;
+            int anz;
+        }
+
+        public Einkaufszettel einkaufswagen
+        {
+            get
+            {
+                return _einkaufswagen;
+            }
+
+            set
+            {
+
+            }
+        }
 
         // public Einkaufszettel Liste { get { _einkaufsliste; } set { _einkaufsliste = value; } }
         public Einkaufszettel einkaufsliste
@@ -71,36 +90,35 @@ namespace FilialSimulation_Actor_ConsoleApplication
         public virtual void bezahlen()
         {
             WriteLine("Der Actor zahlt für");
-            this.listeAnzeigen();
+            // this.listeAnzeigen();
         }
-        public struct zeile
-        {
-            int art;
-            int anz;
-        }
+        
 
 
         public void wareEntnehmen()
         {
-            // temporärer Einkaufswagen
-            // typvorlage kann der Einkaufzettel sein
-            for(int i = 0; i <_einkaufsliste.liste.Count; i++)
+            Einkaufszettel einkaufswagen = new Einkaufszettel("Einkaufswagen");
+            for (int zaehler = 0; zaehler < einkaufsliste.liste.Count; zaehler++)
             {
-                WriteLine("vom zettel : {0}", einkaufsliste.liste[i].artikel);
+                
+                WriteLine("Auf dem Zettel : Artikel {0,3} soll {1,3} mal gekauft werden", einkaufsliste.liste[zaehler].artikel, einkaufsliste.liste[zaehler].anzahl);
+                //            if(  >  )
+                //             { // genug im Regal
+
+                // einkaufswagen.liste.Add = // wunsch
+                // Verkauf[xx].   -= wunsch;
+                //              }
+                //              else
+                //              { // zu wenig im Regal, alles was noch da ist
+                // einkaufswagen.liste. = // Verkauf[xx].
+                // Verkauf[xx].   = 0;
+                //     
+                WriteLine("Im Wagen lfdNr: {0},ArtikelNr:{1}, Anzahl:{2}", zaehler, einkaufsliste.liste[zaehler].artikel, einkaufsliste.liste[zaehler].anzahl);
+                einkaufswagen.liste.Add(_einkaufsliste.liste[zaehler]);
             }
-            einkaufsliste.liste.Add(_einkaufsliste.liste[]);
-            // vermindern des Bestands im Regal
-            // welches Regal? erst wenn integriert in Projekt
-
-            // um den Einkaufswunsch
-
-            // also vom Einkaufszettel ablesen
-
-            // solange noch was da ist
-
-            // sonst nur die verfügbare Menge nehmen
-
-            // damit bildet sich der 'Einkaufswagen'
+            WriteLine("Im Wagen sind {0} verschiedene Artikel ", einkaufswagen.liste.Count);
+            WriteLine("-----");
+            ReadLine();
         }
     }
 }

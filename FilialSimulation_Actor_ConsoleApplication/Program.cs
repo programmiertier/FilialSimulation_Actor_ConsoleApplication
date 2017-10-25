@@ -29,8 +29,11 @@ namespace FilialSimulation_Actor_ConsoleApplication
             Personal mariahubdi = new Personal();
             mariahubdi.bezahlen();  */
 
-            Actor irgendwer = new Actor();
+            Dieb irgendwer = new Dieb();
             irgendwer.wareEntnehmen();
+
+            Kunde huaba = new Kunde();
+            huaba.wareEntnehmen();
 
             ReadLine();
         }

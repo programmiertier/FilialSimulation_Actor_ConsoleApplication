@@ -13,6 +13,7 @@ namespace FilialSimulation_Actor_ConsoleApplication
         {
             this.id = Actor.lfrNr;
             WriteLine("Ich bin Personal und werde als {0}. aufgerufen", id);
+            this.bezahlen();
         }
         ~Personal()
         {
@@ -22,7 +23,7 @@ namespace FilialSimulation_Actor_ConsoleApplication
         public override void bezahlen()
         {
             WriteLine("Das Personal zahlt mit Rabatt");
-            this.listeAnzeigen();
+            // this.listeAnzeigen();
         }
     }
 }

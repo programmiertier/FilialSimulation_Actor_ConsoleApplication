@@ -25,6 +25,11 @@ namespace FilialSimulation_Actor_ConsoleApplication
             { liste.Add(new zeile() { artikel = zufall.Next(1, 800), anzahl = zufall.Next(4, 10) }); }
         }
 
+        public Einkaufszettel(string irgendwas)
+        {
+
+        }
+
         public void zeigen()
         {
             foreach (zeile platzhalter in liste)
