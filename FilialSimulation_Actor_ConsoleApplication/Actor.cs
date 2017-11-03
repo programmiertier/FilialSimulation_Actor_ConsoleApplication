@@ -35,7 +35,6 @@ namespace FilialSimulation_Actor_ConsoleApplication
             }
         }
 
-        // public Einkaufszettel Liste { get { _einkaufsliste; } set { _einkaufsliste = value; } }
         public Einkaufszettel einkaufsliste
         {
             get
@@ -101,7 +100,7 @@ namespace FilialSimulation_Actor_ConsoleApplication
             for (int zaehler = 0; zaehler < einkaufsliste.liste.Count; zaehler++)
             {
                 
-                WriteLine("Auf dem Zettel : Artikel {0,3} soll {1,3} mal gekauft werden", einkaufsliste.liste[zaehler].artikel, einkaufsliste.liste[zaehler].anzahl);
+                WriteLine("Auf dem Zettel:\t{0}\tArtikel\t\t{1,3} soll\t{2,3} mal gekauft werden", zaehler, einkaufsliste.liste[zaehler].artikel, einkaufsliste.liste[zaehler].anzahl);
                 //            if(  >  )
                 //             { // genug im Regal
 
@@ -113,8 +112,9 @@ namespace FilialSimulation_Actor_ConsoleApplication
                 // einkaufswagen.liste. = // Verkauf[xx].
                 // Verkauf[xx].   = 0;
                 //     
-                WriteLine("Im Wagen lfdNr: {0},ArtikelNr:{1}, Anzahl:{2}", zaehler, einkaufsliste.liste[zaehler].artikel, einkaufsliste.liste[zaehler].anzahl);
+                WriteLine("Im Wagen lfdNr:\t{0}\tArtikelNr:\t{1,3}, Anzahl:\t{2,3}", zaehler, einkaufsliste.liste[zaehler].artikel, einkaufsliste.liste[zaehler].anzahl);
                 einkaufswagen.liste.Add(_einkaufsliste.liste[zaehler]);
+                WriteLine();
             }
             WriteLine("Im Wagen sind {0} verschiedene Artikel ", einkaufswagen.liste.Count);
             WriteLine("-----");

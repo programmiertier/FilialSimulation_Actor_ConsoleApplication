@@ -11,29 +11,14 @@ namespace FilialSimulation_Actor_ConsoleApplication
     {
         static void Main(string[] args)
         {
-            /* Dieb huabasepp = new Dieb();
-            huabasepp.bezahlen();
-
-            Kunde marysophie = new Kunde();
-            marysophie.bezahlen();
-
-            Personal henno = new Personal();
-            henno.bezahlen();
-
-            Kunde klarairgendwas = new Kunde();
-            klarairgendwas.bezahlen();
-
-            Dieb paulchenpanter = new Dieb();
-            paulchenpanter.bezahlen();
-
-            Personal mariahubdi = new Personal();
-            mariahubdi.bezahlen();  */
-
-            Dieb irgendwer = new Dieb();
-            irgendwer.wareEntnehmen();
+            Dieb langfinger = new Dieb();
+            langfinger.wareEntnehmen();
 
             Kunde huaba = new Kunde();
             huaba.wareEntnehmen();
+
+            Personal herrmaier = new Personal();
+            herrmaier.wareEntnehmen();
 
             ReadLine();
         }
